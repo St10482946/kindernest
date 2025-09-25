@@ -4,56 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admissions - Kindernest Preschool</title>
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <table width="100%">
-    <tr>
-      <td align="left">
-        <img src="img/logo.jpg" alt="Kindernest Preschool Logo" width="100">
-      </td>
-      <td align="right">
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="programs.html">Programs</a> |
-        <a href="admissions.html">Admissions</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-      </td>
-    </tr>
-  </table>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="site-brand">
+        <img src="img/logo.jpg" alt="KinderNest Logo">
+        <span>KinderNest</span>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="admissions.html" class="active">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Admissions Section -->
-  <h2 align="center">Admissions Enquiry</h2>
-  <p align="center">Please complete the form below to enquire about admissions.</p>
+  <!-- Main Section -->
+  <main>
+    <section class="admission-form">
+      <h1>Admissions Enquiry</h1>
+      <p>Please complete the form below to enquire about admissions for your child.</p>
 
-  <form align="center">
-    <label>Parent/Guardian Name:</label><br>
-    <input type="text" name="name"><br><br>
+      <form>
+        <label for="name">Parent/Guardian Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
 
-    <label>Email:</label><br>
-    <input type="email" name="email"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
 
-    <label>Phone Number:</label><br>
-    <input type="text" name="phone"><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="+27 11 123 4567">
 
-    <label>Child’s Age:</label><br>
-    <input type="text" name="child_age"><br><br>
+        <label for="child_age">Child’s Age:</label>
+        <input type="text" id="child_age" name="child_age" placeholder="Age in years">
 
-    <label>Message/Enquiry:</label><br>
-    <textarea name="message" rows="5" cols="40"></textarea><br><br>
+        <label for="message">Message/Enquiry:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your enquiry here"></textarea>
 
-    <input type="submit" value="Submit Enquiry">
-  </form>
+        <input type="submit" value="Submit Enquiry" class="btn">
+      </form>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <p align="center">
-      "Education is not preparation for life; education is life itself." – John Dewey
-    </p>
+  <footer class="site-footer">
+    <blockquote>“Education is not preparation for life; education is life itself.” — John Dewey</blockquote>
+    <p>&copy; 2025 KinderNest | All Rights Reserved</p>
   </footer>
 
 </body>

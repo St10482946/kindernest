@@ -4,69 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programs - Kindernest Preschool</title>
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <table width="100%">
-    <tr>
-      <td align="left">
-        <img src="img/logo.jpg" alt="Kindernest Preschool Logo" width="100">
-      </td>
-      <td align="right">
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="programs.html">Programs</a> |
-        <a href="admissions.html">Admissions</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-      </td>
-    </tr>
-  </table>
-
-  <!-- Programs Section -->
-  <h2 align="center">Programs and Activities</h2>
-  <p align="center">
-    At Kindernest Preschool, we nurture young minds through fun, interactive, and educational programs
-    designed to promote holistic growth. Our programs combine academics, creativity, and physical development.
-  </p>
-
-  <table width="100%">
-    <tr>
-      <!-- Left Column: Activities List -->
-      <td width="50%" valign="top" style="padding:20px;">
-        <h3>Our Activities Include:</h3>
-        <ul>
-          <li><b>Baking:</b> Encourages creativity, patience, and early math skills.</li>
-          <li><b>Swimming:</b> Builds confidence, safety awareness, and motor development.</li>
-          <li><b>Gymnastics:</b> Improves balance, coordination, and strength.</li>
-          <li><b>Sports:</b> Teaches teamwork, discipline, and active lifestyles.</li>
-          <li><b>Early Learning:</b> Prepares children for school with literacy, numeracy, and problem-solving.</li>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="site-brand">
+        <img src="img/logo.jpg" alt="KinderNest Logo">
+        <span>KinderNest</span>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html" class="active">Programs</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </td>
+      </nav>
+    </div>
+  </header>
 
-      <!-- Right Column: Mini Slideshow -->
-      <td width="50%" align="center">
-        <h3>Activities in Action</h3>
-        <marquee behavior="scroll" direction="left" scrollamount="4" width="90%">
-          <img src="img/baking.jpg" alt="Baking" width="200">
-          <img src="img/swim.jpg" alt="Swimming" width="200">
-          <img src="img/gymnastics.jpg" alt="Gymnastics" width="200">
-          <img src="img/soccer.jpg" alt="Sports" width="200">
-          <img src="img/creative.jpg" alt="Early Learning" width="200">
-        </marquee>
-      </td>
-    </tr>
-  </table>
+  <main>
+    <section class="programs">
+      <h1>Our Programs</h1>
+      <p>We nurture young minds through interactive and educational activities designed to promote creativity, teamwork, and confidence.</p>
 
-  <!-- Footer -->
-  <footer>
-    <p align="center">
-      "Play is the highest form of research." – Albert Einstein
-    </p>
+      <div class="program-list">
+        <article><h2>Baking</h2><p>Encourages creativity, patience, and early math skills.</p></article>
+        <article><h2>Swimming</h2><p>Builds confidence, safety awareness, and motor development.</p></article>
+        <article><h2>Gymnastics</h2><p>Improves balance, coordination, and strength.</p></article>
+        <article><h2>Sports</h2><p>Teaches teamwork, discipline, and active lifestyles.</p></article>
+        <article><h2>Early Learning</h2><p>Prepares children for school with literacy, numeracy, and problem-solving.</p></article>
+      </div>
+
+      <!-- Activities Images Row -->
+      <h2>Activities in Action</h2>
+      <div class="activities-row">
+        <img src="img/baking.jpg" alt="Baking Activity">
+        <img src="img/swim.jpg" alt="Swimming Activity">
+        <img src="img/gymnastics.jpg" alt="Gymnastics Activity">
+        <img src="img/soccer.jpg" alt="Sports Activity">
+        <img src="img/creative.jpg" alt="Early Learning Activity">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <blockquote>“Play is the highest form of research.” — Albert Einstein</blockquote>
+    <p>&copy; 2025 KinderNest | All Rights Reserved</p>
   </footer>
 
 </body>
 </html>
+
