@@ -1,13 +1,14 @@
 # kindernest
-# Kindernest Preschool Website POE Part 1
+# Kindernest Preschool Website POE Part 1 and Part 2
 
 ## Student Information
 - Name: Emily Qhawekazi Maramani  
 - Student Number: ST10482946  
 
 ## Project Overview
-This project involves the creation of a simple, functional website for Kindernest Preschool as part of the Part 1 Practical of the POE. The website showcases the preschool's services, programs, contact information, and provides a visually appealing and user-friendly interface for parents and guardians. The focus is on using HTML basics, maintaining semantic structure, and ensuring content is well-organized.
+This project involves the creation of a functional, responsive website for Kindernest Preschool as part of the WEDE POE 2025. The website showcases the preschool's services, programs, contact information, and provides a visually appealing, user-friendly interface for parents and guardians.  
 
+**Focus:** Using semantic HTML, CSS styling (Part 2), and responsive design principles to enhance usability and accessibility.  
 ## Website Goals and Objectives
 - **Goal**: To create an informative, easy-to-navigate website for Kindernest Preschool.  
 - **Objectives:**  
@@ -18,12 +19,14 @@ This project involves the creation of a simple, functional website for Kindernes
   5. Ensure mobile-friendly layout without advanced CSS or JavaScript.  
 
 ## Key Features and Functionality
-- Homepage with welcome banner and navigation  
+- - Homepage with welcome banner and navigation  
 - About page detailing the preschool's philosophy  
 - Programs page listing educational and recreational programs  
 - Admissions page with enquiry form  
 - Gallery page with images and video slideshow  
 - Contact page with email, phone, WhatsApp, and Google Maps location  
+- Responsive navigation and media queries implemented  
+- Buttons and hover/focus effects for better interactivity 
 
 ## Timeline and Milestones
 | Milestone | Description | Date Completed |
@@ -35,6 +38,7 @@ This project involves the creation of a simple, functional website for Kindernes
 | Gallery Page | Image and video placeholders | [05/09/2025] |
 | Contact Page | Contact details and map | [05/09/2025] |
 | Part 1 Submission | Completed Part 1 POE | [05/09/2025] |
+| Part 2 Submission | Completed Part 2 POE | [20/09/2025] |
 
 ## Part 1 Details
 - HTML-only pages with **basic semantic tags**  
@@ -42,6 +46,21 @@ This project involves the creation of a simple, functional website for Kindernes
 - Responsive Google Map embed for location  
 - Footer with inspirational quote  
 - No external CSS or JavaScript used in Part 1  
+
+## Part 2 Details 
+- CSS stylesheet (`css/style.css`) linked to all pages  
+- Base styles, reset, and CSS variables implemented  
+- Typography scale for headings and paragraphs using `rem` units  
+- Desktop layouts using Flexbox for programs, gallery, and navigation  
+- Colors applied via CSS variables  
+- Pseudo-classes and keyboard focus for navigation links  
+- Media queries for 1024px / 768px / 480px breakpoints  
+- Mobile-friendly adjustments for columns and typography  
+- Responsive navigation implemented  
+- Buttons styled with hover effects  
+- Images responsive with alt text and proper sizing  
+- Admissions form centered with headings and input fields aligned  
+- Activities images row added with hover scale effect  
 
 ## Sitemap
 Home
@@ -57,6 +76,8 @@ Home
 | 1.0 | [05/09/2025 | Initial creation of all Part 1 pages with basic content |
 | 1.1 | [05/09/2025] | Fixed header alignment and map display |
 | 1.2 | [05/09/2025] | Updated contact information and footer quote |
+| 2.0 | 25/09/2025 | Added CSS styling, responsive layout, buttons, hover/focus effects, and media queries |
+
 
 ## References
 - Content ideas and guidance provided by ChatGPT, OpenAI  
@@ -78,6 +99,4 @@ gallery5     - https://unsplash.com/photos/people-sitting-on-blue-carpet-gsRi9cW
 contact      - https://unsplash.com/photos/white-and-black-dice-on-green-textile-idhx-MOCDSk
 
 ## GitHub Repository Link
-https://github.com/St10482946/kindernest2
-
-
+https://github.com/St10482946/kindernest
