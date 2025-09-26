@@ -1,13 +1,16 @@
 # kindernest
-# Kindernest Preschool Website POE Part 1
+# Kindernest Preschool Website POE Part 1 and Part 2
 
 ## Student Information
 - Name: Emily Qhawekazi Maramani  
-- Student Number: ST10482946  
+- Student Number: ST10482946 
+- Module code: WEDE5020
+- Lecturer: Kamogelo M
 
 ## Project Overview
-This project involves the creation of a simple, functional website for Kindernest Preschool as part of the Part 1 Practical of the POE. The website showcases the preschool's services, programs, contact information, and provides a visually appealing and user-friendly interface for parents and guardians. The focus is on using HTML basics, maintaining semantic structure, and ensuring content is well-organized.
+This project involves the creation of a functional, responsive website for Kindernest Preschool as part of the WEDE POE 2025. The website showcases the preschool's services, programs, contact information, and provides a visually appealing, user-friendly interface for parents and guardians.This project addresses Part 1 (HTML) and Part 2 (CSS & Responsive Design)  
 
+**Focus:** Using semantic HTML, CSS styling (Part 2), and responsive design principles to enhance usability and accessibility.  
 ## Website Goals and Objectives
 - **Goal**: To create an informative, easy-to-navigate website for Kindernest Preschool.  
 - **Objectives:**  
@@ -20,21 +23,32 @@ This project involves the creation of a simple, functional website for Kindernes
 ## Key Features and Functionality
 - Homepage with welcome banner and navigation  
 - About page detailing the preschool's philosophy  
-- Programs page listing educational and recreational programs  
+- Programs/Services page listing educational and recreational programs  
 - Admissions page with enquiry form  
 - Gallery page with images and video slideshow  
 - Contact page with email, phone, WhatsApp, and Google Maps location  
+- Responsive navigation and media queries implemented  
+- Buttons and hover/focus effects for better interactivity 
 
 ## Timeline and Milestones
-| Milestone | Description | Date Completed |
-|-----------|-------------|----------------|
-| Project Planning | Sitemap, layout, and structure | [05/09/2025] |
-| Homepage Development | Logo, navigation, welcome banner | [05/09/2025] |
-| About & Programs Pages | Descriptions and educational content | [05/09/2025] |
-| Admissions Page | Enquiry form creation | [05/09/2025] |
-| Gallery Page | Image and video placeholders | [05/09/2025] |
-| Contact Page | Contact details and map | [05/09/2025] |
-| Part 1 Submission | Completed Part 1 POE | [05/09/2025] |
+| Milestone             | Description | Date Completed |
+|-----------------------|-------------|----------------|
+| Project Planning      | Sitemap, layout, and initial structure | 05/09/2025 |
+| Homepage Development  | Logo, navigation, welcome banner | 05/09/2025 |
+| About & Programs Pages| Content structure and placeholders | 05/09/2025 |
+| Admissions Page       | Created enquiry form (HTML only) | 05/09/2025 |
+| Gallery Page          | Added image placeholders | 05/09/2025 |
+| Contact Page          | Added contact details and embedded map | 05/09/2025 |
+| Part 1 Submission     | Completed Part 1 (HTML only) | 05/09/2025 |
+| CSS Integration       | Linked stylesheet, applied global reset and variables | 20/09/2025 |
+| Typography Updates    | Styled h1, h2, and body text with Arial/Helvetica/Sans-serif font stack | 21/09/2025 |
+| Header Banner         | Added teal background header with navigation hover/focus styles | 22/09/2025 |
+| Footer Banner         | Styled footer with quotes and teal background | 23/09/2025 |
+| Page Styling          | Styled hero, about, programs, and gallery sections with flexbox and backgrounds | 24/09/2025 |
+| Form Styling          | Styled admissions form with inputs, buttons, and layout | 25/09/2025 |
+| Responsive Design     | Implemented media queries for desktop, tablet, mobile | 25/09/2025 |
+| Screenshot Evidence   | Captured proof of responsive layouts in Chrome DevTools | 25/09/2025 |
+| Part 2 Submission     | Completed CSS and responsive implementation | 25/09/2025 |
 
 ## Part 1 Details
 - HTML-only pages with **basic semantic tags**  
@@ -42,6 +56,23 @@ This project involves the creation of a simple, functional website for Kindernes
 - Responsive Google Map embed for location  
 - Footer with inspirational quote  
 - No external CSS or JavaScript used in Part 1  
+
+## Part 2 Details 
+- CSS stylesheet (`css/style.css`) linked to all pages  
+- Base styles, reset, and CSS variables implemented  
+- Typography scale for headings and paragraphs using `rem` units  
+- Desktop layouts using Flexbox for programs, gallery, and navigation  
+- Colors applied via CSS variables  
+- Pseudo-classes and keyboard focus for navigation links  
+- Media queries for 1024px / 768px / 480px breakpoints  
+- Mobile-friendly adjustments for columns and typography  
+- Responsive navigation implemented  
+- Buttons styled with hover effects  
+- Images responsive with alt text and proper sizing  
+- Admissions form centered with headings and input fields aligned  
+- Activities images row added with hover scale effect  
+- Part 1 is in main, Part 2 updates are in part2-changes
+- Screenshots and changelog below provide evidence of Part 2 implementation as required by rubric
 
 ## Sitemap
 Home
@@ -52,32 +83,59 @@ Home
 └── Contact
 
 ## Changelog
-| Version | Date | Description |
-|---------|------|-------------|
-| 1.0 | [05/09/2025 | Initial creation of all Part 1 pages with basic content |
-| 1.1 | [05/09/2025] | Fixed header alignment and map display |
-| 1.2 | [05/09/2025] | Updated contact information and footer quote |
+| Version | Date       | Description |
+|---------|------------|-------------|
+| 1.0     | 05/09/2025 | Initial creation of all Part 1 pages with semantic HTML structure (index, about, programs, admissions, gallery, contact). |
+| 1.1     | 05/09/2025 | Fixed header alignment and ensured embedded Google Map displayed responsively. |
+| 1.2     | 05/09/2025 | Updated footer quotes and refined contact information. |
+| 2.0     | 20/09/2025 | Linked external CSS stylesheet and applied global styles (colors, typography, layout). |
+| 2.1     | 21/09/2025 | Implemented typography scale: h1 (teal), h2 (green), body text smaller but readable. |
+| 2.2     | 22/09/2025 | Styled header banner with teal background, integrated logo + navigation, applied hover/focus effects. |
+| 2.3     | 23/09/2025 | Styled footer banner with teal background and consistent inspirational quotes. |
+| 2.4     | 24/09/2025 | Added responsive hero section, gallery styling, and program cards with flexbox. |
+| 2.5     | 25/09/2025 | Added admissions form styling, button hover effects, activities image row with hover scaling. |
+| 2.6     | 25/09/2025 | Implemented responsive design using media queries for desktop, tablet, and mobile. Added screenshot evidence for all breakpoints. |
+
+## Screenshots (Part 2 Evidence)
+Desktop View
+![Desktop](docs/screenshots/desktop-20250925.png)
+Tablet View
+![Tablet](docs/screenshots/tablet-20250925.png)
+Mobile View
+![Mobile](docs/screenshots/mobile-20250925.png)
 
 ## References
-- Content ideas and guidance provided by ChatGPT, OpenAI  
-- Google Maps embed code from Google Maps “Share → Embed a map” feature  
-**image refernces*
-baking.jpg   - https://unsplash.com/photos/girl-in-white-long-sleeve-shirt-holding-brown-wooden-tray-with-yellow-and-white-donuts-ceTcTwZ-Pew
-blocks.jpg   - https://unsplash.com/photos/child-building-an-four-boxes-OO89_95aUC0
-gymnastics   - https://unsplash.com/photos/a-group-of-people-sitting-on-mats-YIydUsQL3v0
-swim         - https://unsplash.com/photos/white-and-green-wooden-stand-on-swimming-pool-Hlc0D_HoEKk
-soccer       - https://unsplash.com/photos/a-group-of-young-boys-playing-a-game-of-soccer-_4VcQE_RvFo
-creative     - https://unsplash.com/photos/person-holding-pink-and-white-heart-print-paper-g7dUm6lRvtQ
-whoweare     - https://unsplash.com/photos/girl-in-blue-denim-shorts-and-green-tank-top-walking-on-the-street-during-daytime-UAjYk_GPvxE
-welcome      - https://unsplash.com/photos/person-with-blue-paint-on-hand-cylPETXS7is
-gallery1     - https://unsplash.com/photos/girl-in-white-dress-standing-beside-man-in-blue-and-white-plaid-dress-shirt-xaG8oaZD7ss
-gallery2     - https://unsplash.com/photos/girl-in-pink-and-white-floral-dress-riding-on-swing-during-daytime-UhnYx1c4pWs
-gallery3     - https://unsplash.com/photos/person-holding-blue-and-red-paper-TJxotQTUr8o
-gallery4     - https://unsplash.com/photos/silhouette-photo-of-person-V6MGShmhFlc
-gallery5     - https://unsplash.com/photos/people-sitting-on-blue-carpet-gsRi9cWCIB0
-contact      - https://unsplash.com/photos/white-and-black-dice-on-green-textile-idhx-MOCDSk
+Google Maps. (2025). Embed a map feature. [online] Available at: <https://maps.google.com> [Accessed 25 September 2025].
+
+OpenAI. (2025). ChatGPT — Prompt assistance. [online] Available at: <https://chat.openai.com> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Girl in white long sleeve shirt holding wooden tray with donuts. [online] Available at: <https://unsplash.com/photos/ceTcTwZ-Pew> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Child building four boxes with blocks. [online] Available at: <https://unsplash.com/photos/OO89_95aUC0> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Group of people sitting on mats (Gymnastics). [online] Available at: <https://unsplash.com/photos/YIydUsQL3v0> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Wooden stand at swimming pool. [online] Available at: <https://unsplash.com/photos/Hlc0D_HoEKk> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Young boys playing soccer. [online] Available at: <https://unsplash.com/photos/_4VcQE_RvFo> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Person holding pink and white heart print paper (Creative activity). [online] Available at: <https://unsplash.com/photos/g7dUm6lRvtQ> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Girl walking on the street (Who we are). [online] Available at: <https://unsplash.com/photos/UAjYk_GPvxE> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Person with blue paint on hand (Welcome). [online] Available at: <https://unsplash.com/photos/cylPETXS7is> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Girl in white dress with teacher (Gallery 1). [online] Available at: <https://unsplash.com/photos/xaG8oaZD7ss> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Girl on swing (Gallery 2). [online] Available at: <https://unsplash.com/photos/UhnYx1c4pWs> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Person holding red and blue paper (Gallery 3). [online] Available at: <https://unsplash.com/photos/TJxotQTUr8o> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). Silhouette photo of person (Gallery 4). [online] Available at: <https://unsplash.com/photos/V6MGShmhFlc> [Accessed 25 September 2025>.]
+
+Unsplash. (n.d.). People sitting on carpet (Gallery 5). [online] Available at: <https://unsplash.com/photos/gsRi9cWCIB0> [Accessed 25 September 2025].
+
+Unsplash. (n.d.). White and black dice on green textile (Contact). [online] Available at: <https://unsplash.com/photos/idhx-MOCDSk> [Accessed 25 September 2025].
 
 ## GitHub Repository Link
-https://github.com/St10482946/kindernest2
-
-
+https://github.com/St10482946/kindernest

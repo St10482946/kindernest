@@ -4,48 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery - Kindernest Preschool</title>
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <table width="100%">
-    <tr>
-      <!-- Logo -->
-      <td align="left">
-        <img src="img/logo.jpg" alt="Kindernest Preschool Logo" width="100">
-      </td>
-      <!-- Navigation -->
-      <td align="right">
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="programs.html">Programs</a> |
-        <a href="admissions.html">Admissions</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-      </td>
-    </tr>
-  </table>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="site-brand">
+        <img src="img/logo.jpg" alt="KinderNest Logo">
+        <span>KinderNest</span>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Gallery Section -->
-  <h2 align="center">Gallery</h2>
-  <p align="center">A glimpse of our little stars in action.</p>
+  <main>
+    <section class="gallery-preview">
+      <h1>Gallery</h1>
+      <p>Take a glimpse of our little stars in action!</p>
+      <div class="gallery-row">
+        <img src="img/gallery1.jpg" alt="Gallery Image 1">
+        <img src="img/gallery2.jpg" alt="Gallery Image 2">
+        <img src="img/gallery3.jpg" alt="Gallery Image 3">
+        <img src="img/gallery4.jpg" alt="Gallery Image 4">
+        <img src="img/gallery5.jpg" alt="Gallery Image 5">
+      </div>
+    </section>
+  </main>
 
-  <!-- Scrolling Image Slideshow -->
-  <marquee behavior="scroll" direction="left" scrollamount="3" width="100%">
-    <img src="img/gallery1.jpg" alt="Gallery Image 1" width="200">
-    <img src="img/gallery2.jpg" alt="Gallery Image 2" width="200">
-    <img src="img/gallery3.jpg" alt="Gallery Image 3" width="200">
-    <img src="img/gallery4.jpg" alt="Gallery Image 4" width="200">
-    <img src="img/gallery5.jpg" alt="Gallery Image 5" width="200">
-  </marquee>
-
-  <!-- Footer -->
-  <footer>
-    <p align="center">
-      "Tell me and I forget. Teach me and I remember. Involve me and I learn." – Benjamin Franklin
-    </p>
+  <footer class="site-footer">
+    <blockquote>“Tell me and I forget. Teach me and I remember. Involve me and I learn.” — Benjamin Franklin</blockquote>
+    <p>&copy; 2025 KinderNest | All Rights Reserved</p>
   </footer>
 
 </body>

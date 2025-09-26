@@ -3,42 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kindernest Preschool</title>
-
+  <title>KinderNest Preschool</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Header: Logo (left) and Navigation (right) -->
-  <table width="100%">
-    <tr>
-      <td align="left">
-        <img src="img/logo.jpg" alt="Kindernest Preschool Logo" width="120">
-      </td>
-      <td align="right">
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="programs.html">Programs</a> |
-        <a href="admissions.html">Admissions</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-      </td>
-    </tr>
-  </table>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="site-brand">
+        <img src="img/logo.jpg" alt="KinderNest Logo">
+        <span>KinderNest</span>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li> 
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Large Hero Image -->
-  <div align="center">
-    <img src="img/welcome.jpg" alt="Welcome Image" width="100%" height="500">
-  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to KinderNest Preschool</h1>
+    <p class="tagline">A place where little minds blossom and grow.</p>
+    <img src="img/welcome.jpg" alt="Happy children at KinderNest Preschool" class="hero-image">
+  </section>
 
-  <!-- Welcome Message -->
-  <h1 align="center">Welcome to Kindernest Preschool</h1>
-
-  <!-- Footer with Quote -->
-  <footer>
-    <p align="center">
-      "Education is the most powerful weapon which you can use to change the world." – Nelson Mandela
+  <!-- About Us -->
+  <section class="about">
+    <h2>About KinderNest</h2>
+    <p>
+      KinderNest Preschool provides a safe, nurturing, and fun environment where children explore, 
+      learn, and develop essential life skills. Our caring teachers use play-based learning to spark 
+      creativity, confidence, and curiosity in every child.
     </p>
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
+
+  <!-- Programs Overview -->
+  <section class="programs">
+    <h2>Our Programs</h2>
+    <div class="program-list">
+      <article>
+        <h3>Playgroup</h3>
+        <p>For toddlers to learn through play, songs, and movement.</p>
+      </article>
+      <article>
+        <h3>Preschool</h3>
+        <p>Structured early learning to prepare children for primary school.</p>
+      </article>
+      <article>
+        <h3>Aftercare</h3>
+        <p>Safe, supportive after-school care with creative activities.</p>
+      </article>
+    </div>
+    <a href="programs.html" class="btn">View All Programs</a>
+  </section>
+
+  <!-- Gallery Preview -->
+  <section class="gallery-preview">
+    <h2>Our World in Pictures</h2>
+    <div class="gallery-row">
+      <img src="img/gallery1.jpg" alt="Children painting in class">
+      <img src="img/gallery2.jpg" alt="Outdoor play area">
+      <img src="img/gallery3.jpg" alt="Story time with teacher">
+    </div>
+    <a href="gallery.html" class="btn">View Full Gallery</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <blockquote>
+      “Education is the most powerful weapon which you can use to change the world.” 
+      <br>— Nelson Mandela
+    </blockquote>
+    <p>&copy; 2025 KinderNest | All Rights Reserved</p>
   </footer>
 
 </body>
