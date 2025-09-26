@@ -74,6 +74,15 @@ This project involves the creation of a functional, responsive website for Kinde
 - Part 1 is in main, Part 2 updates are in part2-changes
 - Screenshots and changelog below provide evidence of Part 2 implementation as required by rubric
 
+## Feedback Received (from Part 1 of Part 2)
+| Area | Score | Comments |
+|------|-------|---------|
+| Content added to website | 1/5 | Insufficient content; more meaningful text and images needed. |
+| HTML tags / layout | 4/10 | Layout needs improvement; ensure proper semantic HTML and correct indentation. |
+| Code / functionality | 7/10 | Mostly correct; minor improvements possible. |
+| Website structure / planning | 2/5 | Weak planning; consider adding a brief sitemap or structure explanation. |
+| Content research / sourcing | 4/10 | Include references for images, text, or resources used. |
+
 ## Sitemap
 Home
 ├── About
@@ -81,6 +90,15 @@ Home
 ├── Admissions
 ├── Gallery
 └── Contact
+
+## To-Do List / Edits
+1. Add more meaningful content to website pages (text, images, descriptions).  
+2. Improve HTML structure and layout (use proper semantic tags like `header`, `main`, `section`, `footer`).  
+3. Document website plan / sitemap in README.  
+4. Add references for all resources, images, and content used.  
+5. Include screenshots of desktop, tablet, and mobile views in `docs/screenshots/`.  
+6. Ensure CSS font fix (Arial/Helvetica) is applied and verified locally.  
+7. Record all edits in README changelog as they are committed.  
 
 ## Changelog
 | Version | Date       | Description |
@@ -103,6 +121,14 @@ Tablet View
 ![Tablet](docs/screenshots/tablet-20250925.png)
 Mobile View
 ![Mobile](docs/screenshots/mobile-20250925.png)
+
+## Submission Notes
+This submission includes:
+- Part 2 content updates (text, images, layout adjustments).
+- Screenshots for all device views.
+- Changelog documenting all updates.
+- Resources and references used.
+- Verified CSS font fix applied (Arial/Helvetica).
 
 ## References
 Google Maps. (2025). Embed a map feature. [online] Available at: <https://maps.google.com> [Accessed 25 September 2025].
