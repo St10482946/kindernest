@@ -10,7 +10,8 @@
 ## Project Overview
 This project involves the creation of a functional, responsive website for Kindernest Preschool as part of the WEDE POE 2025. The website showcases the preschool's services, programs, contact information, and provides a visually appealing, user-friendly interface for parents and guardians.This project addresses Part 1 (HTML) and Part 2 (CSS & Responsive Design) as well as Part 3 (JavaScript,SEO,Forms and Validation)
 
-**Focus:** Using semantic HTML, CSS styling (Part 2), and responsive design principles to enhance usability and accessibility.  
+**Focus:** The focus across all parts was to progressively enhance structure, appearance, interactivity, and usability.
+
 ## Website Goals and Objectives
 - **Goal**: To create an informative, easy-to-navigate website for Kindernest Preschool.  
 - **Objectives:**  
@@ -18,17 +19,21 @@ This project involves the creation of a functional, responsive website for Kinde
   2. Provide an easy way for parents to contact the school.  
   3. Include a visual gallery showcasing activities.  
   4. Use semantic HTML to structure content.  
-  5. Ensure mobile-friendly layout without advanced CSS or JavaScript.  
+  5. Ensure mobile-friendly layout and responsive design.  
+  6. Add meaningful interactivity and validated forms in Part 3.  
+  7. Improve accessibility, SEO, and user experience using JavaScript enhancements.  
 
 ## Key Features and Functionality
 - Homepage with welcome banner and navigation  
 - About page detailing the preschool's philosophy  
-- Programs/Services page listing educational and recreational programs  
+- Programs page listing educational and recreational programs  
 - Admissions page with enquiry form  
-- Gallery page with images and video slideshow  
-- Contact page with email, phone, WhatsApp, and Google Maps location  
-- Responsive navigation and media queries implemented  
-- Buttons and hover/focus effects for better interactivity 
+- Gallery page with images and fullscreen lightbox functionality  
+- Contact page with email, phone, WhatsApp, and Google Maps  
+- Responsive navigation and full device support  
+- JavaScript interactions, animations, and form validation  
+- Dynamic elements including lightbox gallery and form processing
+
 
 ## Timeline and Milestones
 | Milestone             | Description | Date Completed |
@@ -49,6 +54,8 @@ This project involves the creation of a functional, responsive website for Kinde
 | Responsive Design     | Implemented media queries for desktop, tablet, mobile | 25/09/2025 |
 | Screenshot Evidence   | Captured proof of responsive layouts in Chrome DevTools | 25/09/2025 |
 | Part 2 Submission     | Completed CSS and responsive implementation | 25/09/2025 |
+| Part 3 Development | JavaScript, SEO, Forms | 15–20/11/2025 |
+| Part 3 Submission | Full interactivity & SEO | 20/11/2025 |
 
 ## Part 1 Details
 - HTML-only pages with **basic semantic tags**  
@@ -73,6 +80,40 @@ This project involves the creation of a functional, responsive website for Kinde
 - Activities images row added with hover scale effect  
 - Part 1 is in main, Part 2 updates are in part2-changes
 - Screenshots and changelog below provide evidence of Part 2 implementation as required by rubric
+
+## Part 3 Details 
+- Part 3 focused on adding **interactivity, dynamic content,   JavaScript functionality, animations, improved forms, and SEO enhancements**. No layout or design changes were required; only functional upgrades.
+- **JavaScript Interactivity**
+- Added full-screen **lightbox gallery** with navigation controls.  
+- Implemented **dynamic content loading** for selected sections.  
+- Included a **search/filter script** where required.  
+- Added gentle **scroll and hover animations** using CSS + JS.
+- **Wave Animations**
+- Added animated SVG waves to the homepage hero section.  
+- Added matching animated wave at the bottom of the footer.  
+- Ensured smooth transitions and visual consistency.
+- **Form Enhancements**
+- Added full **client-side validation** for:
+  - Name  
+  - Email  
+  - Phone  
+  - Message content  
+- Added **real-time error messages** and styled alerts.  
+- Prevented default browser alerts; custom feedback only.  
+- Added **AJAX submit simulation** for Contact form.  
+- Added **dynamic output** on admissions form depending on user inputs.
+- **SEO Improvements**
+- Added meta tags for title, description, and keywords on all pages.  
+- Improved heading hierarchy and semantic structure.  
+- Added descriptive alt text for all images.  
+- Improved internal linking to strengthen crawlability.  
+- Added `robots.txt` and `sitemap.xml`.  
+- Enhanced content readability for SEO.
+- **Code & Repository Improvements**
+- Cleaned all JavaScript files and organized them into sections.  
+- Added comments and improved readability.  
+- Updated README to include Part 3 documentation.  
+- Added Part 3 notes and changelog entries.
 
 ## Feedback Received (from Part 1 of Part 2)
 | Area | Score | Comments |
@@ -134,7 +175,8 @@ This submission includes:
 - Changelog documenting all updates.
 - Resources and references used.
 - Verified CSS font fix applied (Arial/Helvetica).
-- Part 3 
+- Full Part 3 JavaScript + Interactivity + SEO + Forms 
+- A fully updated README including parts 1–3   
 
 ## References
 Google Maps. (2025). Embed a map feature. [online] Available at: <https://maps.google.com> [Accessed 25 September 2025].
