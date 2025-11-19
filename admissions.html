@@ -3,8 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
   <title>Admissions - Kindernest Preschool</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- SEO -->
+  <meta name="description" content="Enquire about admissions at KinderNest Preschool. Learn about our programs, availability, and enrollment process for children ages 3 months to 6 years in Pretoria.">
+  <meta name="keywords" content="preschool admissions, kindergarten enrollment, childcare registration, Pretoria preschool, early childhood education">
+  <link rel="canonical" href="https://yourdomain.com/admissions.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Admissions - KinderNest Preschool" />
+  <meta property="og:description" content="Enquire about admissions and enrollment at KinderNest Preschool in Pretoria." />
+  <meta property="og:image" content="https://yourdomain.com/img/welcome.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/admissions.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#008080">
 </head>
 <body>
 
@@ -24,7 +42,22 @@
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="search-container">
+          <input type="search" id="search-input" placeholder="Search..." aria-label="Search website">
+          <div id="search-results" class="search-results"></div>
+        </div>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
+    </div>
+    <!-- Wave Animation at bottom of header -->
+    <div class="wave wave-bottom">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,100 600,20 900,60 C1050,80 1150,40 1200,60 L1200,120 L0,120 Z" fill="#fffdf8"></path>
+      </svg>
     </div>
   </header>
 
@@ -32,34 +65,110 @@
   <main>
     <section class="admission-form">
       <h1>Admissions Enquiry</h1>
-      <p>Please complete the form below to enquire about admissions for your child.</p>
+      <p>Please complete the form below to enquire about admissions, availability, and costs for your child.</p>
 
-      <form>
-        <label for="name">Parent/Guardian Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name">
+      <form id="admission-form" class="admission-form" novalidate>
+        <label for="parentName">Parent/Guardian Name <span class="required">*</span></label>
+        <input 
+          type="text" 
+          id="parentName" 
+          name="parentName" 
+          required 
+          minlength="2" 
+          maxlength="100"
+          pattern="[A-Za-z\s'-]+"
+          placeholder="Your full name">
+        <span class="field-error" id="parentName-error"></span>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com">
+        <label for="parentEmail">Email Address <span class="required">*</span></label>
+        <input 
+          type="email" 
+          id="parentEmail" 
+          name="parentEmail" 
+          required 
+          maxlength="255"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          placeholder="your.email@example.com">
+        <span class="field-error" id="parentEmail-error"></span>
 
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phone" placeholder="+27 11 123 4567">
+        <label for="parentPhone">Phone Number <span class="required">*</span></label>
+        <input 
+          type="tel" 
+          id="parentPhone" 
+          name="parentPhone" 
+          required 
+          minlength="10" 
+          maxlength="20"
+          pattern="[\d\s\+\-\(\)]+"
+          placeholder="+27 11 123 4567">
+        <span class="field-error" id="parentPhone-error"></span>
 
-        <label for="child_age">Child’s Age:</label>
-        <input type="text" id="child_age" name="child_age" placeholder="Age in years">
+        <label for="childAge">Child's Age (in years) <span class="required">*</span></label>
+        <input 
+          type="number" 
+          id="childAge" 
+          name="childAge" 
+          required 
+          min="0" 
+          max="6"
+          step="0.5"
+          placeholder="e.g., 3.5">
+        <span class="field-error" id="childAge-error"></span>
 
-        <label for="message">Message/Enquiry:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your enquiry here"></textarea>
+        <label for="programInterest">Program of Interest <span class="required">*</span></label>
+        <select id="programInterest" name="programInterest" required>
+          <option value="">--Please Select a Program--</option>
+          <option value="Playgroup">Playgroup</option>
+          <option value="Preschool">Preschool</option>
+          <option value="Aftercare">Aftercare</option>
+          <option value="Swimming">Swimming</option>
+          <option value="Gymnastics">Gymnastics</option>
+          <option value="Multiple Programs">Multiple Programs</option>
+        </select>
+        <span class="field-error" id="programInterest-error"></span>
 
-        <input type="submit" value="Submit Enquiry" class="btn">
+        <label for="startDate">Preferred Start Date</label>
+        <input 
+          type="date" 
+          id="startDate" 
+          name="startDate"
+          min="">
+        <span class="field-error" id="startDate-error"></span>
+
+        <label for="enquiryMessage">Message/Enquiry <span class="required">*</span></label>
+        <textarea 
+          id="enquiryMessage" 
+          name="enquiryMessage" 
+          rows="5" 
+          required 
+          minlength="10" 
+          maxlength="500"
+          placeholder="Please provide details about your enquiry, including questions about availability, costs, or specific requirements"></textarea>
+        <span class="field-error" id="enquiryMessage-error"></span>
+        <small class="char-count">Characters: <span id="admission-char-count">0</span>/500</small>
+
+        <input type="submit" value="Submit Enquiry" id="admission-submit-btn" class="btn">
       </form>
+
+      <div id="admission-response"></div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <blockquote>“Education is not preparation for life; education is life itself.” — John Dewey</blockquote>
+    <!-- Wave Animation at top of footer -->
+    <div class="wave wave-top">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,20 600,100 900,60 C1050,40 1150,80 1200,60 L1200,0 L0,0 Z" fill="#fffdf8"></path>
+      </svg>
+    </div>
+    <blockquote>"Education is not preparation for life; education is life itself." — John Dewey</blockquote>
     <p>&copy; 2025 KinderNest | All Rights Reserved</p>
   </footer>
 
+  <!-- Dark Mode Button -->
+  <button id="darkModeBtn" aria-label="Toggle Dark Mode">🌙</button>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

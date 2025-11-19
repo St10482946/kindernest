@@ -3,17 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Kindernest Preschool</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <title>Contact Us - KinderNest Preschool</title>
+
+  <!-- Main Styles -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- SEO -->
+  <meta name="description" content="Contact KinderNest Preschool in Pretoria. Get in touch via email, phone, WhatsApp, or visit us at 123 Learning Lane. Send us a message or view our location on the map.">
+  <meta name="keywords" content="contact preschool, Pretoria kindergarten, preschool location, childcare contact, preschool email, preschool phone">
+  <link rel="canonical" href="https://yourdomain.com/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact - KinderNest Preschool" />
+  <meta property="og:description" content="Contact KinderNest Preschool in Pretoria. Get in touch via email, phone, or visit us." />
+  <meta property="og:image" content="https://yourdomain.com/img/contact.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/contact.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#008080">
 </head>
+
 <body>
 
+  <!-- HEADER -->
   <header class="site-header">
     <div class="nav-wrap">
       <div class="site-brand">
         <img src="img/logo.jpg" alt="KinderNest Logo">
         <span>KinderNest</span>
       </div>
+
       <nav class="main-nav">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
@@ -21,34 +47,155 @@
           <li><a href="programs.html">Programs</a></li>
           <li><a href="admissions.html">Admissions</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
+        <div class="search-container">
+          <input type="search" id="search-input" placeholder="Search..." aria-label="Search website">
+          <div id="search-results" class="search-results"></div>
+        </div>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
+    </div>
+    <!-- Wave Animation at bottom of header -->
+    <div class="wave wave-bottom">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,100 600,20 900,60 C1050,80 1150,40 1200,60 L1200,120 L0,120 Z" fill="#fffdf8"></path>
+      </svg>
     </div>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main>
-    <section class="contact">
+    <section class="contact reveal">
+
       <h1>Contact Us</h1>
-      <p>We would love to hear from you. Reach us through any of the following:</p>
+      <p>We would love to hear from you. Reach us through:</p>
       <p><b>Email:</b> info@kindernestpreschool.com</p>
       <p><b>Phone:</b> +27 11 123 4567</p>
       <p><b>WhatsApp:</b> +27 82 123 4567</p>
 
       <h2>Find Us</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.825176357104!2d28.0473053151156!3d-26.20410298343844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d0c1e5b3f4d%3A0x4b9c8f4a0b63c23e!2sPretoria%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1693923671523!5m2!1sen!2sza"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+
+      <!-- MAP -->
+      <div id="map"></div>
+
       <p>123 Learning Lane, Pretoria, South Africa</p>
-      <p>Office Hours: Mon-Fri, 8:00 AM - 5:00 PM</p>
+      <p>Office Hours: Mon–Fri, 8am–5pm</p>
+
+      <h2>Send a Message</h2>
+
+      <!-- CONTACT FORM -->
+      <form id="contact-form" class="contact-form" novalidate>
+
+        <label for="cName">Full Name <span class="required">*</span></label>
+        <input 
+          type="text" 
+          id="cName" 
+          name="cName" 
+          required 
+          minlength="2" 
+          maxlength="100"
+          pattern="[A-Za-z\s'-]+"
+          title="Please enter a valid name (letters, spaces, hyphens, and apostrophes only)"
+          placeholder="Enter your full name">
+        <span class="field-error" id="cName-error"></span>
+
+        <label for="cEmail">Email Address <span class="required">*</span></label>
+        <input 
+          type="email" 
+          id="cEmail" 
+          name="cEmail" 
+          required 
+          maxlength="255"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please enter a valid email address"
+          placeholder="your.email@example.com">
+        <span class="field-error" id="cEmail-error"></span>
+
+        <label for="cPhone">Phone Number <span class="required">*</span></label>
+        <input 
+          type="tel" 
+          id="cPhone" 
+          name="cPhone" 
+          required 
+          minlength="10" 
+          maxlength="20"
+          pattern="[\d\s\+\-\(\)]+"
+          title="Please enter a valid phone number (10-20 digits, may include spaces, +, -, or parentheses)"
+          placeholder="+27 11 123 4567 or 011 123 4567">
+        <span class="field-error" id="cPhone-error"></span>
+
+        <label for="messageType">Type of Message <span class="required">*</span></label>
+        <select id="messageType" name="messageType" required>
+          <option value="">--Please Select a Message Type--</option>
+          <option value="General Enquiry">General Enquiry</option>
+          <option value="Admissions">Admissions</option>
+          <option value="Feedback">Feedback</option>
+          <option value="Complaint">Complaint</option>
+          <option value="Other">Other</option>
+        </select>
+        <span class="field-error" id="messageType-error"></span>
+
+        <label for="cMessage">Your Message <span class="required">*</span></label>
+        <textarea 
+          id="cMessage" 
+          name="cMessage" 
+          rows="6" 
+          required 
+          minlength="10" 
+          maxlength="1000"
+          title="Please enter a message between 10 and 1000 characters"
+          placeholder="Please type your message here (minimum 10 characters)"></textarea>
+        <span class="field-error" id="cMessage-error"></span>
+        <small class="char-count">Characters: <span id="char-count">0</span>/1000</small>
+
+        <input type="submit" value="Send Message" id="submit-btn">
+
+      </form>
+
+      <div id="contact-response"></div>
+
+  
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <blockquote>“It takes a big heart to shape little minds.” — Unknown</blockquote>
+    <!-- Wave Animation at top of footer -->
+    <div class="wave wave-top">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,20 600,100 900,60 C1050,40 1150,80 1200,60 L1200,0 L0,0 Z" fill="#fffdf8"></path>
+      </svg>
+    </div>
+    <blockquote>"It takes a big heart to shape little minds." — Unknown</blockquote>
     <p>&copy; 2025 KinderNest | All Rights Reserved</p>
   </footer>
 
+  <!-- Dark Mode Button -->
+  <button id="darkModeBtn" aria-label="Toggle Dark Mode">🌙</button>
+
+
+  <!-- JS LIBRARIES -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- INLINE MAP (desktop-ready) -->
+  <script>
+    const map = L.map('map').setView([-25.7479, 28.2292], 14);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+
+    L.marker([-25.7479, 28.2292]).addTo(map)
+      .bindPopup('<b>KinderNest Preschool</b><br>123 Learning Lane, Pretoria')
+      .openPopup();
+  </script>
+
 </body>
-</html>
+</html

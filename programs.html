@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';" />
   <title>Programs - Kindernest Preschool</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- SEO -->
+  <meta name="description" content="Explore KinderNest Preschool's educational programs: baking, swimming, gymnastics, sports, and early learning activities for children in Pretoria.">
+  <meta name="keywords" content="preschool programs, kindergarten activities, swimming lessons, gymnastics for kids, early learning, Pretoria preschool">
+  <link rel="canonical" href="https://yourdomain.com/programs.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Programs - KinderNest Preschool" />
+  <meta property="og:description" content="Explore our fun and educational programs for kids: baking, swimming, gymnastics, sports, and more." />
+  <meta property="og:image" content="https://yourdomain.com/img/welcome.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#008080" />
 </head>
+
 <body>
 
-  <header class="site-header">
+  <!-- HEADER -->
+  <header class="site-header reveal">
     <div class="nav-wrap">
       <div class="site-brand">
-        <img src="img/logo.jpg" alt="KinderNest Logo">
+        <img src="img/logo.jpg" alt="KinderNest Logo" loading="lazy" />
         <span>KinderNest</span>
       </div>
-      <nav class="main-nav">
+
+      <!-- NAVIGATION -->
+      <nav class="main-nav" id="mobileMenu">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -23,16 +44,34 @@
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="search-container">
+          <input type="search" id="search-input" placeholder="Search..." aria-label="Search website">
+          <div id="search-results" class="search-results"></div>
+        </div>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
+    </div>
+    <!-- Wave Animation at bottom of header -->
+    <div class="wave wave-bottom">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,100 600,20 900,60 C1050,80 1150,40 1200,60 L1200,120 L0,120 Z" fill="#fffdf8"></path>
+      </svg>
     </div>
   </header>
 
   <main>
-    <section class="programs">
+    <!-- PROGRAMS SECTION -->
+    <section class="programs reveal">
       <h1>Our Programs</h1>
-      <p>We nurture young minds through interactive and educational activities designed to promote creativity, teamwork, and confidence.</p>
+      <p>
+        We nurture young minds through interactive and educational activities designed to promote creativity, teamwork, and confidence.
+      </p>
 
-      <div class="program-list">
+      <div class="program-list reveal">
         <article><h2>Baking</h2><p>Encourages creativity, patience, and early math skills.</p></article>
         <article><h2>Swimming</h2><p>Builds confidence, safety awareness, and motor development.</p></article>
         <article><h2>Gymnastics</h2><p>Improves balance, coordination, and strength.</p></article>
@@ -40,23 +79,60 @@
         <article><h2>Early Learning</h2><p>Prepares children for school with literacy, numeracy, and problem-solving.</p></article>
       </div>
 
-      <!-- Activities Images Row -->
-      <h2>Activities in Action</h2>
-      <div class="activities-row">
-        <img src="img/baking.jpg" alt="Baking Activity">
-        <img src="img/swim.jpg" alt="Swimming Activity">
-        <img src="img/gymnastics.jpg" alt="Gymnastics Activity">
-        <img src="img/soccer.jpg" alt="Sports Activity">
-        <img src="img/creative.jpg" alt="Early Learning Activity">
+      <!-- SLIDESHOW SECTION -->
+      <h2 class="reveal">Activities in Action</h2>
+
+      <div class="slideshow-container reveal" id="activitiesSlideshow">
+        <!-- Slide 1 -->
+        <div class="slide fade">
+          <img src="img/baking.jpg" alt="Children enjoying baking activity" loading="lazy">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide fade">
+          <img src="img/swim.jpg" alt="Kids learning to swim safely" loading="lazy">
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide fade">
+          <img src="img/gymnastics.jpg" alt="Gymnastics fun and balance" loading="lazy">
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide fade">
+          <img src="img/soccer.jpg" alt="Children playing sports outdoors" loading="lazy">
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide fade">
+          <img src="img/creative.jpg" alt="Creative learning and exploration" loading="lazy">
+        </div>
+
+        <!-- Slideshow arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
     </section>
   </main>
 
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop">↑</button>
+
   <footer class="site-footer">
-    <blockquote>“Play is the highest form of research.” — Albert Einstein</blockquote>
+    <!-- Wave Animation at top of footer -->
+    <div class="wave wave-top">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,20 600,100 900,60 C1050,40 1150,80 1200,60 L1200,0 L0,0 Z" fill="#fffdf8"></path>
+      </svg>
+    </div>
+    <blockquote>"Tell me and I forget. Teach me and I remember. Involve me and I learn." — Benjamin Franklin</blockquote>
     <p>&copy; 2025 KinderNest | All Rights Reserved</p>
   </footer>
 
+  <!-- Dark Mode Button -->
+  <button id="darkModeBtn" aria-label="Toggle Dark Mode">🌙</button>
+
+  <!-- JS FILE -->
+  <script src="js/script.js"></script>
 </body>
 </html>
-

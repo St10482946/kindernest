@@ -3,8 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
   <title>Gallery - Kindernest Preschool</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- SEO -->
+  <meta name="description" content="View our gallery showcasing children's activities, learning experiences, and daily life at KinderNest Preschool in Pretoria.">
+  <meta name="keywords" content="preschool gallery, children activities, kindergarten photos, Pretoria preschool images">
+  <link rel="canonical" href="https://yourdomain.com/gallery.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gallery - KinderNest Preschool" />
+  <meta property="og:description" content="View photos of our children's activities and learning experiences." />
+  <meta property="og:image" content="https://yourdomain.com/img/gallery1.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/gallery.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#008080">
 </head>
 <body>
 
@@ -23,28 +41,62 @@
           <li><a href="gallery.html" class="active">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="search-container">
+          <input type="search" id="search-input" placeholder="Search..." aria-label="Search website">
+          <div id="search-results" class="search-results"></div>
+        </div>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
+    </div>
+    <!-- Wave Animation at bottom of header -->
+    <div class="wave wave-bottom">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,100 600,20 900,60 C1050,80 1150,40 1200,60 L1200,120 L0,120 Z" fill="#fffdf8"></path>
+      </svg>
     </div>
   </header>
 
   <main>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" hidden aria-hidden="true" role="dialog" aria-label="Image preview">
+      <div class="lb-inner">
+        <button id="lb-close" class="lb-close" aria-label="Close preview">✕</button>
+        <img id="lb-img" alt="">
+        <div class="lb-hint">Press ESC to close</div>
+      </div>
+    </div>
+
     <section class="gallery-preview">
       <h1>Gallery</h1>
       <p>Take a glimpse of our little stars in action!</p>
       <div class="gallery-row">
-        <img src="img/gallery1.jpg" alt="Gallery Image 1">
-        <img src="img/gallery2.jpg" alt="Gallery Image 2">
-        <img src="img/gallery3.jpg" alt="Gallery Image 3">
-        <img src="img/gallery4.jpg" alt="Gallery Image 4">
-        <img src="img/gallery5.jpg" alt="Gallery Image 5">
+        <img src="img/gallery1.jpg" alt="Children painting in class" data-full="img/gallery1.jpg">
+        <img src="img/gallery2.jpg" alt="Outdoor play activities" data-full="img/gallery2.jpg">
+        <img src="img/gallery3.jpg" alt="Creative learning activities" data-full="img/gallery3.jpg">
+        <img src="img/gallery4.jpg" alt="Children playing together" data-full="img/gallery4.jpg">
+        <img src="img/gallery5.jpg" alt="Story time and reading" data-full="img/gallery5.jpg">
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <blockquote>“Tell me and I forget. Teach me and I remember. Involve me and I learn.” — Benjamin Franklin</blockquote>
+    <!-- Wave Animation at top of footer -->
+    <div class="wave wave-top">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,20 600,100 900,60 C1050,40 1150,80 1200,60 L1200,0 L0,0 Z" fill="#fffdf8"></path>
+      </svg>
+    </div>
+    <blockquote>"Tell me and I forget. Teach me and I remember. Involve me and I learn." — Benjamin Franklin</blockquote>
     <p>&copy; 2025 KinderNest | All Rights Reserved</p>
   </footer>
 
+  <!-- Dark Mode Button -->
+  <button id="darkModeBtn" aria-label="Toggle Dark Mode">🌙</button>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

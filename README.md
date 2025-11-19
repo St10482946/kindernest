@@ -1,5 +1,5 @@
 # kindernest
-# Kindernest Preschool Website POE Part 1 and Part 2
+# Kindernest Preschool Website POE Part 1, Part 2 and Part 3
 
 ## Student Information
 - Name: Emily Qhawekazi Maramani  
@@ -8,7 +8,7 @@
 - Lecturer: Kamogelo M
 
 ## Project Overview
-This project involves the creation of a functional, responsive website for Kindernest Preschool as part of the WEDE POE 2025. The website showcases the preschool's services, programs, contact information, and provides a visually appealing, user-friendly interface for parents and guardians.This project addresses Part 1 (HTML) and Part 2 (CSS & Responsive Design)  
+This project involves the creation of a functional, responsive website for Kindernest Preschool as part of the WEDE POE 2025. The website showcases the preschool's services, programs, contact information, and provides a visually appealing, user-friendly interface for parents and guardians.This project addresses Part 1 (HTML) and Part 2 (CSS & Responsive Design) as well as Part 3 (JavaScript,SEO,Forms and Validation)
 
 **Focus:** Using semantic HTML, CSS styling (Part 2), and responsive design principles to enhance usability and accessibility.  
 ## Website Goals and Objectives
@@ -113,6 +113,11 @@ Home
 | 2.4     | 24/09/2025 | Added responsive hero section, gallery styling, and program cards with flexbox. |
 | 2.5     | 25/09/2025 | Added admissions form styling, button hover effects, activities image row with hover scaling. |
 | 2.6     | 25/09/2025 | Implemented responsive design using media queries for desktop, tablet, and mobile. Added screenshot evidence for all breakpoints. |
+| 2.7     | [19/11/2025] | **Part 2 Feedback Implementation**: Received excellent feedback and 100% marks for Part 2 submission. Lecturer commended the comprehensive implementation of CSS styling, responsive design principles, semantic HTML structure, and attention to detail in layout and visual presentation. All requirements were met including proper use of CSS variables, flexbox layouts, media queries, and accessibility features. The website demonstrates strong understanding of responsive web design principles and effective use of modern CSS techniques. |
+| 3.0     | 20/11/2025 | **Part 3 Implementation - JavaScript Enhancements**: Implemented comprehensive JavaScript functionality including interactive accordion on about page, interactive Leaflet map on contact page, gallery lightbox with keyboard navigation, search functionality with dropdown results, smooth scroll animations, reveal-on-scroll effects, and advanced DOM manipulation with event delegation. |
+| 3.1     | 20/11/2025 | **Part 3 Implementation - Form Functionality**: Created fully functional admissions and contact forms with comprehensive client-side validation, real-time error handling, AJAX submission, loading states, and user-friendly feedback. Forms include phone number format validation, email validation, character length validation, and dynamic error message display. |
+| 3.2     | 20/11/2025 | **Part 3 Implementation - SEO Optimization**: Implemented comprehensive on-page SEO including unique title tags and meta descriptions for all pages, proper header tag hierarchy (H1-H3), descriptive alt text for all images, clean URL structure, internal linking strategy, robots.txt, sitemap.xml, and local SEO with structured data (JSON-LD) for business information. |
+| 3.3     | 20/11/2025 | **Part 3 Implementation - Production Optimizations**: Created minified versions of CSS and JavaScript files for production use, added security improvements including Content Security Policy meta tags, and updated documentation. All Part 3 requirements have been fully implemented and tested. |
 
 ## Screenshots (Part 2 Evidence)
 Desktop View
@@ -122,13 +127,14 @@ Tablet View
 Mobile View
 ![Mobile](docs/screenshots/mobile-20250925.png)
 
-## Submission Notes
+## Submission Notes 
 This submission includes:
 - Part 2 content updates (text, images, layout adjustments).
 - Screenshots for all device views.
 - Changelog documenting all updates.
 - Resources and references used.
 - Verified CSS font fix applied (Arial/Helvetica).
+- Part 3 
 
 ## References
 Google Maps. (2025). Embed a map feature. [online] Available at: <https://maps.google.com> [Accessed 25 September 2025].

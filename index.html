@@ -3,8 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
   <title>KinderNest Preschool</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- SEO + OG template -->
+  <title>KinderNest Preschool — A place where little minds blossom</title>
+  <meta name="description" content="KinderNest Preschool — safe, loving, play-based learning for ages 3 months to 6 years. Admissions, programs, and gallery in Pretoria.">
+  <meta name="keywords" content="preschool, kindergarten, childcare, play-based learning, Pretoria, admissions, early childhood education">
+  <link rel="canonical" href="https://yourdomain.com/index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="KinderNest Preschool — A place where little minds blossom" />
+  <meta property="og:description" content="Safe, loving preschool offering playgroup, preschool, aftercare, swimming and gymnastics in Pretoria." />
+  <meta property="og:image" content="https://yourdomain.com/img/welcome.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/index.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KinderNest Preschool">
+  <meta name="twitter:description" content="Play-based learning for little learners in Pretoria.">
+  <meta name="twitter:image" content="https://yourdomain.com/img/welcome.jpg">
+
+  <!-- Mobile friendly hint -->
+  <meta name="theme-color" content="#008080">
+
+  <!-- Structured data (local business) -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "ChildCare",
+  "name": "KinderNest Preschool",
+  "url": "https://yourdomain.com",
+  "telephone": "+27111234567",
+  "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "123 Learning Lane",
+  "addressLocality": "Pretoria",
+  "addressCountry": "ZA"
+  }
+  }
+  </script>
 </head>
 <body>
 
@@ -24,7 +66,22 @@
           <li><a href="gallery.html">Gallery</a></li> 
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="search-container">
+          <input type="search" id="search-input" placeholder="Search..." aria-label="Search website">
+          <div id="search-results" class="search-results"></div>
+        </div>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
+    </div>
+    <!-- Wave Animation at bottom of header -->
+    <div class="wave wave-bottom">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,100 600,20 900,60 C1050,80 1150,40 1200,60 L1200,120 L0,120 Z" fill="#fffdf8"></path>
+      </svg>
     </div>
   </header>
 
@@ -74,17 +131,27 @@
       <img src="img/gallery2.jpg" alt="Outdoor play area">
       <img src="img/gallery3.jpg" alt="Story time with teacher">
     </div>
-    <a href="gallery.html" class="btn">View Full Gallery</a>
+    <a href="gallery.html" class="btn btn-small">View Full Gallery</a>
   </section>
+
+  <!-- Dark Mode Button -->
+  <button id="darkModeBtn" aria-label="Toggle Dark Mode">🌙</button>
 
   <!-- Footer -->
   <footer class="site-footer">
+    <!-- Wave Animation at top of footer -->
+    <div class="wave wave-top">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,20 600,100 900,60 C1050,40 1150,80 1200,60 L1200,0 L0,0 Z" fill="#fffdf8"></path>
+      </svg>
+    </div>
     <blockquote>
-      “Education is the most powerful weapon which you can use to change the world.” 
+      "Education is the most powerful weapon which you can use to change the world." 
       <br>— Nelson Mandela
     </blockquote>
     <p>&copy; 2025 KinderNest | All Rights Reserved</p>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
